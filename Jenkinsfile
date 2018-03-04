@@ -11,7 +11,6 @@ pipeline {
 	steps {
 	echo "Stashing Any Local Changes"
         sh 'git stash'
-        sh 'git remote add origin git@github.com:sysagents/java.git'
 	echo "Checking Out Development Branch"
         sh 'git checkout development'
         echo 'Checking Out Master Branch'
