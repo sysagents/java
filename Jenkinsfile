@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Build') {
         when {
-        branch 'master'
+        branch 'development'
 		}
 	steps {
         echo "Stashing Any Local Changes"
