@@ -1,20 +1,20 @@
-pipeline { 
+pipeline {
     agent {
 	label 'docker'
-	}  
-    stages { 
-        stage('Build') { 
-            steps { 
-               echo 'This is a master pipeline.' 
+        
+        }
+    stages {
+        stage('Build') {
+            steps {
+               echo 'This is a master pipeline.'
                echo 'This is a master and Webhook triggerd.'
-	}
-	when {
-	agent { label 'docker'}
-	branch 'master'
-	steps { echo 'branch is master'}
-				
-		}
+        }
+        when {
+        branch 'master'
+               }
 
                 }
     }
 }
+
+
