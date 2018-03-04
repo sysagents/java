@@ -7,7 +7,8 @@ pipeline {
         stage('Build') {
         when {
         branch 'development'
-	 steps {
+		}
+	steps {
         echo "Stashing Any Local Changes"
         sh 'git stash'
         echo "Checking Out Development Branch"
@@ -20,9 +21,7 @@ pipeline {
         echo 'Pushing to Origin Master'
         sh 'git push origin master'
       }
-               }
-
-                }
+      }
     }
 }
 
