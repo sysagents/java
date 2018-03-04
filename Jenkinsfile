@@ -10,7 +10,7 @@ pipeline {
                echo 'This is a master and Webhook triggerd.'
         }
         when {
-        branch 'master'
+        branch 'dev'
                }
 
                 }
