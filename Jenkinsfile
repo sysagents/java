@@ -8,7 +8,7 @@ pipeline {
                echo 'This is a master pipeline.' 
                echo 'This is a master and Webhook triggerd.'
 	when {
-	agent { label ('docker')}
+	agent { label 'docker'}
 	branch 'master'
 	steps { echo 'branch is master'}
 				
