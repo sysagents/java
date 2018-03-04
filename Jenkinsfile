@@ -23,6 +23,12 @@ pipeline {
       }
       }
     }
+
+        branch 'master'
+		}
+	steps {
+		echo 'master'
+		}
+	}
+	}
 }
-
-
