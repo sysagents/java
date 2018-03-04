@@ -22,13 +22,5 @@ pipeline {
         sh 'git push origin master'
       }
       }
-    }
-
-        branch 'master'
-		}
-	steps {
-		echo 'master'
-		}
-	}
-	}
+    }  
 }
