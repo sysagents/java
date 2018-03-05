@@ -3,14 +3,10 @@ pipeline {
 	label 'docker'
         
         }
-    stages {
-        stage('Build') {
-        when {
-        branch 'master'
-		}
-	steps {
+       stage('Build') {
+      	steps {
 		echo 'master'
 		}
 	}
-	}
+	
 }
